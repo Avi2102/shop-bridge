@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Bridge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <a href="#" class="logo">
+            <strong>shop</strong>bridge
+        </a>
+        <div class="add-more"><button class="btn btn-primary">Add Product</button></div>
+    </header>
+    <div class="body-container">
+        <section class="inventory-section">
+            <div class="container">
+                <div class="card-wrapper">
+                    <h1>Inventory List</h1>
+                    <div class="card-list"></div>
+                    <div class="text-center">
+                        <div class="add-more"><button class="btn btn-primary">Add Product</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="add-container">
+            <div class="container">
+                <h2>Add Product</h2>
+                <form name="addProduct" id="addProduct">
+                    <div class="form-group">
+                        <label for="name">Item Name</label>
+                        <input type="text" class="form-control" id="title" placeholder="Enter item name" value=""></div>
+                    <div class="form-group">
+                        <label for="description">Item description</label>
+                        <textarea class="form-control" id="description" placeholder="Enter item name" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Item price</label>
+                        <input type="number" min="1" class="form-control" id="price" placeholder="Enter item price" value="">
+                    </div>
+                    <div class="form-group form-btn">
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <a href="#" class="btn btn-danger cancel-btn">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="edit-container">
+            <div class="container">
+                <h2>Edit Product</h2>
+                <form name="editProduct" id="editProduct">
+                    <div class="form-group">
+                        <label for="name">Item Name</label>
+                        <input type="text" class="form-control" id="title" placeholder="Enter item name" value=""></div>
+                    <div class="form-group">
+                        <label for="description">Item description</label>
+                        <textarea class="form-control" id="description" placeholder="Enter item name" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Item price</label>
+                        <input type="number" min="1" class="form-control" id="price" placeholder="Enter item price" value="">
+                    </div>
+                    <div class="form-group form-btn">
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <a href="#" class="btn btn-danger cancel-btn">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
